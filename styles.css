@@ -1,0 +1,144 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e9ecef;
+}
+
+header {
+    background: linear-gradient(135deg, #007bff, #00c6ff);
+    color: #ffffff;
+    padding: 15px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+#welcome-title {
+    animation: bounce 2s infinite; /* Apply bounce animation to the title */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #0056b3;
+    color: #ffe600;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+section {
+    padding: 20px;
+    margin: 10px;
+    background: white;
+    border-radius: 5px;
+}
+
+.service-list {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin: 15px 0;
+}
+
+.service-list li {
+    margin: 10px 0;
+    padding: 5px;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.gallery img {
+    width: 18%;
+    margin: 1%;
+    border-radius: 5px;
+    transition: transform 0.3s ease; /* Smooth scaling transition */
+}
+
+.gallery img:hover {
+    transform: scale(1.1); /* Scale up the image slightly on hover */
+}
+
+.fade-in {
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px); /* Move up */
+    }
+    60% {
+        transform: translateY(-5px); /* Move up slightly */
+    }
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.1); /* Scale up slightly on hover */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #007bff;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

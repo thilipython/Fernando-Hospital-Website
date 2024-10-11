@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fernando Hospital(Pvt) Ltd</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1 id="welcome-title">Welcome to Fernando Hospital</h1>
+        <nav>
+            <ul>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#team">Our Team</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <ul class="service-list">
+            <li>Emergency Care</li>
+            <li>OPD Services</li>
+            <li>Labarotory Services</li>
+            <li>Surgical Services</li>
+            <li>Pediatric Care</li>
+        </ul>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Fernando Hospital(Pvt) Ltd is committed to providing quality healthcare services to our community.</p>
+    </section>
+
+    <section id="team">
+        <h2>Our Medical Team</h2>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Specialization</th>
+                <th>Experience (Years)</th>
+            </tr>
+            <tr>
+                <td>Dr. Sunil Perera</td>
+                <td>Cardiologist</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>Dr. Anura Fernando</td>
+                <td>Pediatrician</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td>Dr. Kamal Silva</td>
+                <td>Orthopedic Surgeon</td>
+                <td>12</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery">
+            <img src="image1.jpg" alt="Hospital Image 1" class="fade-in">
+            <img src="image2.jpeg" alt="Hospital Image 2" class="fade-in">
+            <img src="image3.jpeg" alt="Hospital Image 3" class="fade-in">
+            <img src="image4.jpeg" alt="Hospital Image 4" class="fade-in">
+            <img src="image5.jpeg" alt="Hospital Image 5" class="fade-in">
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>For appointments and inquiries, please contact us!</p>
+        <button onclick="showContactInfo()">Get Contact Info</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Fernando Hospital(Pvt) Ltd. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function showContactInfo() {
+             alert("You can reach us at: \nPhone: 011-233-9445 \nEmail: fernandohospital@gmail.com");
+            }
+    </script>
+</body>
+</html>
